@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef967e69-5cdc-4134-a236-1c02a72a1ec3" name="Default Changelist" comment="" />
+    <list default="true" id="ef967e69-5cdc-4134-a236-1c02a72a1ec3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tweet_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweet_by_country" beforeDir="false" afterPath="$PROJECT_DIR$/tweet_by_country" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweet_organizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweet_organizer.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,24 +20,25 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.58" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="818" />
+          <entry key="py" value="2117" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="818" />
+          <entry key="Python" value="2117" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
-          <entry key="py" value="6" />
+          <entry key="py" value="9" />
           <entry key="tweet_by_country" value="2" />
           <entry key="tweet_by_lang" value="4" />
           <entry key="txt" value="10" />
@@ -41,7 +48,7 @@
         <counts>
           <entry key="HTML" value="2" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Python" value="6" />
+          <entry key="Python" value="9" />
           <entry key="SVG" value="2" />
         </counts>
       </usages-collector>
@@ -61,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter_streaming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="109">
               <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding>
                 <element signature="e#50#93#0" expanded="true" />
@@ -70,14 +77,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tweet_organizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="130" selection-start-line="130" selection-end-line="130" />
+            <state relative-caret-position="-663">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1537049833447" expanded="true" signature="1879:5452" ph="..." />
+                <marker date="1537054106939" expanded="true" signature="4229:7968" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tweet_search.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-366">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,7 +105,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter_data_geo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
+            <state relative-caret-position="346443">
               <caret line="20379" column="1" selection-start-line="20379" selection-start-column="1" selection-end-line="20379" selection-end-column="1" />
             </state>
           </provider>
@@ -110,6 +129,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>word_in</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -117,6 +144,7 @@
         <option value="$PROJECT_DIR$/twitter_streaming.py" />
         <option value="$PROJECT_DIR$/tweet_heatmap.py" />
         <option value="$PROJECT_DIR$/tweet_organizer.py" />
+        <option value="$PROJECT_DIR$/tweet_search.py" />
       </list>
     </option>
   </component>
@@ -126,6 +154,7 @@
     <option name="width" value="1890" />
     <option name="height" value="930" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -165,7 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tweet_organizer">
+  <component name="RunManager" selected="Python.tweet_search">
     <configuration name="Twitter_Connection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Zoo_Hackathon" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -229,6 +258,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tweet_search" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Zoo_Hackathon" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tweet_search.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="twitter_streaming" type="PythonConfigurationType" factoryName="Python">
       <module name="Zoo_Hackathon" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -255,9 +305,11 @@
       <item itemvalue="Python.Twitter_Connection" />
       <item itemvalue="Python.tweet_organizer" />
       <item itemvalue="Python.tweet_heatmap" />
+      <item itemvalue="Python.tweet_search" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tweet_search" />
         <item itemvalue="Python.tweet_organizer" />
         <item itemvalue="Python.tweet_heatmap" />
         <item itemvalue="Python.Twitter_Connection" />
@@ -287,20 +339,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23211446" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6192369" weight="0.40569395" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6192369" visible="true" weight="0.32562277" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291815" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3807631" side_tool="true" weight="0.4252669" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3291815" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -349,13 +402,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_streaming.py">
+    <entry file="file://$PROJECT_DIR$/twitter_data_geo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="e#50#93#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="346443">
+          <caret line="20379" column="1" selection-start-line="20379" selection-start-column="1" selection-end-line="20379" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -366,20 +416,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_data_geo.txt">
+    <entry file="file://$PROJECT_DIR$/twitter_streaming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="20379" column="1" selection-start-line="20379" selection-start-column="1" selection-end-line="20379" selection-end-column="1" />
+        <state relative-caret-position="109">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="e#50#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pandas/core/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="4773" column="8" selection-start-line="4773" selection-start-column="8" selection-end-line="4773" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tweet_organizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        <state relative-caret-position="-663">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1537049833447" expanded="true" signature="1879:5452" ph="..." />
+            <marker date="1537054106939" expanded="true" signature="4229:7968" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tweet_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-366">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

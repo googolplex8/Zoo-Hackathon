@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import re
 
 def main():
     #Reading Tweets
@@ -42,7 +42,7 @@ def main():
     #Analyzing Tweets by Country
     print('Analyzing tweets by country\n')
     tweets_by_country = tweets['country'].value_counts()
-    print(len(tweets['country'].value_counts()))
+    #print(len(tweets['country'].value_counts()))
     fig, ax = plt.subplots()
     ax.tick_params(axis='x', labelsize=15)
     ax.tick_params(axis='y', labelsize=10)
@@ -51,7 +51,51 @@ def main():
     ax.set_title('Top 5 countries', fontsize=15, fontweight='bold')
     tweets_by_country[:7].plot(ax=ax, kind='bar', color='blue')
     plt.savefig('tweet_by_country', format='png')
-    plt.show()
+
+    #comparison of particular key words
+    tweets['ivory'] = tweets['text'].apply(lambda tweet: word_in_text('ivory', tweet))
+    tweets['tusk'] = tweets['text'].apply(lambda tweet: word_in_text('tusk', tweet))
+    tweets['pangolin'] = tweets['text'].apply(lambda tweet: word_in_text('pangolin', tweet))
+    print(tweets['ivory'].value_counts()[True])
+    print(tweets['tusk'].value_counts()[True])
+    print(tweets['pangolin'].value_counts()[True])
+    prg_langs = ['ivory', 'tusk', 'pangolin']
+    tweets_by_prg_lang = [tweets['ivory'].value_counts()[True], tweets['tusk'].value_counts()[True],
+                          tweets['pangolin'].value_counts()[True]]
+    x_pos = list(range(len(prg_langs)))
+    width = 0.8
+    fig, ax = plt.subplots()
+    plt.bar(x_pos, tweets_by_prg_lang, width, alpha=1, color='g')
+    # Setting axis labels and ticks
+    ax.set_ylabel('Number of tweets', fontsize=15)
+    ax.set_title('Ranking: ivory vs. tusk vs. pangolin (Raw data)', fontsize=10, fontweight='bold')
+    ax.set_xticks([p + 0.4 * width for p in x_pos])
+    ax.set_xticklabels(prg_langs)
+    plt.grid()
+
+    #relevancy
+    tweets['medicine'] = tweets['text'].apply(lambda tweet: word_in_text('medicine', tweet))
+    tweets['sale'] = tweets['text'].apply(lambda tweet: word_in_text('sale', tweet))
+    tweets['relevant'] = tweets['text'].apply(lambda tweet: word_in_text('medicine', tweet) or word_in_text('sale', tweet))
+    print(tweets['medicine'].value_counts()[True])
+    print(tweets['sale'].value_counts()[True])
+    print(tweets['relevant'].value_counts()[True])
+    tweets_by_prg_lang = [tweets[tweets['relevant'] == True]['ivory'].value_counts()[True],
+                          tweets[tweets['relevant'] == True]['tusk'].value_counts()[True],
+                          tweets[tweets['relevant'] == True]['pangolin'].value_counts()[True]]
+    x_pos = list(range(len(prg_langs)))
+    width = 0.8
+    fig, ax = plt.subplots()
+    plt.bar(x_pos, tweets_by_prg_lang, width, alpha=1, color='g')
+    ax.set_ylabel('Number of tweets', fontsize=15)
+    ax.set_title('Ranking: ivory vs. tusk vs. pangolin (Relevant data)', fontsize=10, fontweight='bold')
+    ax.set_xticks([p + 0.4 * width for p in x_pos])
+    ax.set_xticklabels(prg_langs)
+    plt.grid()
+    #plt.show()
+
+    for tweet in tweets[tweets['relevant']==True]["text"]:
+        print(tweet)
 
 
 def coordinates():
@@ -124,6 +168,16 @@ def coordinates():
     # Save data to JSON file
     with open('twitter_data_geo.txt', 'w') as fout:
         fout.write(json.dumps(users_with_geodata, indent=4))
+
+
+def word_in_text(word, text):
+    word = word.lower()
+    text = text.lower()
+    match = re.search(word, text)
+    if match:
+        return True
+    return False
+
 
 if __name__ == '__main__':
     main()
