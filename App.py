@@ -24,6 +24,7 @@ def postData():
     #API_ENDPOINT = "http:/limitless-sierra-70732.herokuapp.com/postData/"
     data = tweet_search.TweetSearch(getKeyword(), getAttributes())
     json_string = json.dumps(data)
+    return "Hello World"
     #r = requests.post(url=API_ENDPOINT, data=json_string)
 
 
