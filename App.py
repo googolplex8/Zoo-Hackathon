@@ -24,11 +24,11 @@ def getAttributes(attributes):
 def postData():
     print("POSTING DATA")
     #API_ENDPOINT = "http:/limitless-sierra-70732.herokuapp.com/postData/"
+    # r = requests.post(url=API_ENDPOINT, data=json_string)
     data = tweet_search.TweetSearch(getKeyword(), getAttributes())
     json_string = json.dumps(data)
-    return jsonify({'tasks': 'datas'})
-    #r = requests.post(url=API_ENDPOINT, data=json_string)
-
+    return json_string
+  
 
 def index():
     return "Hello, World!"
