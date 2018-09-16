@@ -1,6 +1,7 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flask_restful import Resource, Api
 import json
+
 import requests
 
 import tweet_search
@@ -24,7 +25,7 @@ def postData():
     #API_ENDPOINT = "http:/limitless-sierra-70732.herokuapp.com/postData/"
     data = tweet_search.TweetSearch(getKeyword(), getAttributes())
     json_string = json.dumps(data)
-    return "Hello World"
+    return jsonify({'tasks': 'datas'})
     #r = requests.post(url=API_ENDPOINT, data=json_string)
 
 
