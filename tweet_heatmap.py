@@ -1,5 +1,14 @@
-from gmplot import gmplot
-lats = []
-lngs = []
-gmap = gmplot.GoogleMapPlotter.heatmap(lats, lngs)
-gmap.draw("my_map.html")
+import gmplot
+
+gmap = gmplot.GoogleMapPlotter(37.428, -122.145, 16)
+map_styles = [
+        {
+            'featureType': 'all',
+            'stylers': [
+                {'saturation': -80 },
+                {'lightness': 60 },
+            ]
+        }
+    ]
+
+gmap.draw("mymap.html")
