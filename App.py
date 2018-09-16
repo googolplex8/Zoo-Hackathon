@@ -19,7 +19,7 @@ def getAttributes(attributes):
     return "obtain attributes"
 
 
-@app.route("/data")
+@app.route("/data", methods=['GET'])
 def postData():
     #API_ENDPOINT = "http:/limitless-sierra-70732.herokuapp.com/postData/"
     data = tweet_search.TweetSearch(getKeyword(), getAttributes())
