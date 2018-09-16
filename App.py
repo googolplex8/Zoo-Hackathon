@@ -22,6 +22,7 @@ def getAttributes(attributes):
 
 @app.route("/data", methods=['GET'])
 def postData():
+    print("POSTING DATA")
     #API_ENDPOINT = "http:/limitless-sierra-70732.herokuapp.com/postData/"
     data = tweet_search.TweetSearch(getKeyword(), getAttributes())
     json_string = json.dumps(data)
